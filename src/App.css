@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  text-align: left;
+  padding: 1%;
 }
 
 .App-logo {
@@ -35,4 +36,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.chatWindow{
+  height: 300px;
+  border: 1px solid rgb(220, 220, 220);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.textInput{
+  border: 1px solid rgb(220, 220, 220);
+  padding: 9px;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.buttonInput{
+  border: 1px solid rgb(220, 220, 220);
+  background: rgb(220, 220, 220);
+  padding: 9px;
+  font-size: 14px;
+}
+
+.roomId{
+  background: rgb(210, 210, 210);
+  display: inline-block;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+}
+
+.userId{
+  padding: 5px;
+  background: rgb(220, 220, 220);
+  font-weight: bold;
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+}
+
+.message{
+  padding: 5px;
+  display: inline-block;
 }
