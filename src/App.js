@@ -1,18 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
-
 import { useEffect, useState } from "react";
-
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import { getDatabase, onValue, push, ref, set } from "firebase/database";
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyCKTjwPVAmuN-Q66vNMDe-HKoOHb-hJ5bQ",
   authDomain: "fir-example-d8699.firebaseapp.com",
@@ -24,11 +14,8 @@ const firebaseConfig = {
   databaseURL: "https://fir-example-d8699-default-rtdb.firebaseio.com/"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 const database = getDatabase(app);
-
 
 function sendMessage(roomId, userId, message) {
   const messagesRef = ref(database, 'messages/' + roomId);
